@@ -8,3 +8,11 @@ console.log(process.argv)
   '/Users/paishwa/Desktop/nodejs-practise/04-file-system-cmd-line-args/4-1_getInputFromUser.js',
   'aish' ]*/
   console.log(process.argv[2])
+
+  if(process.argv[2]==='add')
+  {
+      console.log("Hey are you trying to add something??")
+  }
+  else{
+      console.log("hey chill out for now!!!")
+  }
