@@ -1,0 +1,29 @@
+in synchronous code each line of code runs regardless of the length of the work it does
+
+examples of some asychronous function in node is setTimeout
+example data base file fetching 
+synchronous executes one after another
+
+the main ends after all the calls are done
+
+
+--------------
+call stack is the data structure provided by the v8 engine
+-it traps the execution of the program
+
+-stack 
+the program which runs at first place is main 
+and the other things which are placed in it are the method call
+remeber it is a stack
+the methods shift to node api if the implemention is not of javascript
+we can have only function in the call stack any point of time
+
+-node api
+the implemention which are related to node comes here ex- setTimeout since it is not a javascript function
+node js uses other threads inside c++ which lets us continue our program ...non blocking nature
+
+-event loop 
+the  function in the node api come here ..one at once??
+when the call stack is empty it starts pushing the function for execution
+
+
