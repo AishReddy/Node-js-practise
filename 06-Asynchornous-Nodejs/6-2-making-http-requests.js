@@ -2,7 +2,7 @@ const request= require('request')
 
 const url='https://api.darksky.net/forecast/2347acbf2d3c795d709d5b3626982c3a/37.8267,-122.4233?units=si'
 
-request({url:url,json:true},(error,response)=>
+request({url:url,json:true},(error,response)=>//option + handling 0
 {
     //console.log(response.body)
   /*  const data=JSON.parse(response.body)  
