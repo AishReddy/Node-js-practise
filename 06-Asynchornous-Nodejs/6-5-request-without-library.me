@@ -1,0 +1,30 @@
+http 
+https to secure server
+- it is a core module so no need to import it
+
+we need to set up things which we might think are not necessary
+we have to figure out how to  convert the data to json and access it
+//This request will never end since we are ending the request
+
+chunk is the buffer
+
+http.request(url,(response)=>
+{let data=''
+
+    response.on('data',(chunk)=> //for each chunk of data or full data it is going to be executed
+    {//when data comes 
+
+        console.log(chunk)
+    })
+    response.on('end',()=> //after we got the response we need to do this 
+    {
+        
+    })
+})
+
+for error
+
+ response.on('end',()=> //after we got the response we need to do this 
+    {
+        console.log(JSON.parse(data))
+    })
